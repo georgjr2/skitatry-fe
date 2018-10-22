@@ -282,3 +282,19 @@ html, body {
     text-decoration: none;
    
   }
+  body, html {
+    height: 100%;
+}
+  .bg {
+    background-image: url("") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+
+  .bg {
+
+    /* Full height */
+ width: 95.4vw;
+}

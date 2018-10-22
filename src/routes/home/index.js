@@ -1,5 +1,6 @@
 import { h, Component } from 'preact';
 import Scrollchor from 'preact-scrollchor';
+import Parallax from 'react-parallax';
 import Carousel from '../../components/carousel';
 import Form from '../../components/form';
 import Card from 'preact-material-components/Card';
@@ -13,8 +14,11 @@ export default class Home extends Component {
 		return (
 			
 			<div class={`${style.home} page`}>
-				
-				<h1>Lyžiarska škola</h1>
+				<Parallax
+					strength={300}
+				>
+					<img class="bg" src="https://www.grousemountain.com/media/W1siZiIsIjIwMTcvMDEvMzAvMjAvMzkvMzcvOGIyMzE4ZDYtMjlmYS00OTliLTkxYjAtNTVmYTZhOWUxODA3L3RpY2tldC1wYXNzZXMuanBnIl0sWyJwIiwidGh1bWIiLCI5NjB4NDcwXHUwMDNlIl1d?sha=de7bef2fadf325bb" alt="fill murray" />
+				</Parallax>
 			
 				<Card>
 					
