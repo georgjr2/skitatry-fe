@@ -1,4 +1,5 @@
 import { h, Component } from 'preact';
+import Scrollchor from 'preact-scrollchor';
 import Carousel from '../../components/carousel';
 import Form from '../../components/form';
 import Card from 'preact-material-components/Card';
@@ -18,15 +19,14 @@ export default class Home extends Component {
 				<Card>
 					
 					<div class={style.cardHeader}>
-						<h2 class=" mdc-typography--title">Lyžiarska škola skitatry</h2>
-						<div class=" mdc-typography--caption">Vitajte na stránkach našej lyžiarskej školy</div>
+						<h2 class=" mdc-typography--title">Bezkonkurenčné ceny</h2>
 					</div>
 					<div class={style.cardBody}>
-					Ak sa neviete lyžovať alebo snowboardovať, zverte sa radšej do rúk inštruktorov, čím môžete predísť možným chybám, zlozvykom a taktiež Vám ušetria veľa času a zbytočnej námahy. 
-Mimoriadna pozornosť sa venuje naajmenším lyžiarom. Používame rôzne pomôcky na spestrenie a spríjemnenie ich výuky. Vyučujeme podľa rakúskej metodiky lyžovania, ktorú prebrala SLOVENSKÁ ASOCIÁCIA PROFESIONÁLNYCH UČITEĽOV LYŽOVANIA A SNOWBOARDINGU (SAPUL) a Únia lyžiarskych a snowboardových škôl slovenska (LASŠ), prispôsobujeme každému klientovi podľa jeho technickej úrovne a schopností.
+					Ak sa neviete lyžovať alebo snowboardovať, zverte sa radšej do rúk inštruktorov, čím môžete predísť možným chybám, zlozvykom a taktiež Vám ušetria veľa času a zbytočnej námahy.
+Mimoriadna pozornosť sa venuje najmenším lyžiarom. Používame rôzne pomôcky na spestrenie a spríjemnenie ich výuky. Vyučujeme podľa rakúskej metodiky lyžovania, ktorú prebrala SLOVENSKÁ ASOCIÁCIA PROFESIONÁLNYCH UČITEĽOV LYŽOVANIA A SNOWBOARDINGU (SAPUL) a Únia lyžiarskych a snowboardových škôl slovenska (LASŠ), prispôsobujeme každému klientovi podľa jeho technickej úrovne a schopností.
 					</div>
-					<Card.Actions>
-						<Card.ActionButton>Chcem vedieť viac !</Card.ActionButton>
+					<Card.Actions class="tlacidlo2">
+						<Scrollchor to="#form" ><Card.ActionButton>Chcem vedieť viac !</Card.ActionButton></Scrollchor>
 					</Card.Actions>
 				</Card>
 				<br />
@@ -42,8 +42,19 @@ Mimoriadna pozornosť sa venuje naajmenším lyžiarom. Používame rôzne pomô
 				</Card>
 				<br />
 				<Carousel />
-				<h1> Rezervačný formulár </h1>
-				<Form />
+				<br />
+				<Card>
+					<div class={style.cardHeader}>
+						<h2 class=" mdc-typography--title">Formulár</h2>
+						<h2 class=" mdc-typography--caption">Ak chcete vedieť viac, zašlite nám formulár, a my vám obratom odpovieme na všetky vaše otázky</h2>
+					</div>
+					<div class={style.cardBody} id="form">
+						<Form />
+					</div>
+					<Card.Actions>
+						<Card.ActionButton>Rezervovať</Card.ActionButton>
+					</Card.Actions>
+				</Card>
 			</div>
 		);
 	}

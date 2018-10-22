@@ -36,6 +36,7 @@
     "preact-flickity-component": "^1.0.1",
     "preact-material-components": "^1.4.3",
     "preact-router": "^2.5.5",
+    "preact-scrollchor": "^4.3.0",
     "react-flickity-component": "^3.1.0",
     "react-transition-group": "^2.5.0",
     "sass-loader": "^7.1.0"

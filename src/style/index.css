@@ -274,3 +274,11 @@ html, body {
     user-select: none;
   }
   
+  .tlacidlo a {
+    text-decoration: none;
+    color:rgb(250, 250, 250);
+  }
+  .tlacidlo2 a {
+    text-decoration: none;
+   
+  }
